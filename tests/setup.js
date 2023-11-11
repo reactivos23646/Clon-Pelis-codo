@@ -7,4 +7,4 @@ tests: {
     afterEach(() => {
         cleanup();
       });
-  },;
+  }
