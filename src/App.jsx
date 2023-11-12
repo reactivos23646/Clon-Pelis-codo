@@ -2,6 +2,7 @@ import React from 'react'
 
 export const App = () => {
   return (
-    <div>TEST UAT!!! verecel</div>
+    <div>Test PROD!!!</div>
   )
 }
+export default App
