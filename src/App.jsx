@@ -4,7 +4,7 @@ export const App = () => {
   return (
     <div>
       <h1>Test PROD!!!</h1>
-      <h2>prueba 2!!</h2>
+      <h2>prueba FUNCIONAL!</h2>
 
     </div>
   )
