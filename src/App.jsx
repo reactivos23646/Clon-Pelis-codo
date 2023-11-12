@@ -5,3 +5,4 @@ export const App = () => {
     <div>Test PROD!!!</div>
   )
 }
+export default App
