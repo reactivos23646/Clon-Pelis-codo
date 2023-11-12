@@ -7,8 +7,5 @@ describe('App', () => {
     it('should render component',()=>{
         const component = render (<App />);
         expect(component).toBeDefined();
-
-
-
   });
 }); 
