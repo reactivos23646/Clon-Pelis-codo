@@ -5,3 +5,5 @@ export const App = () => {
     <div>Test MAIN!!!</div>
   )
 }
+
+export default App
