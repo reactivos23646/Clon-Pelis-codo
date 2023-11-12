@@ -5,6 +5,7 @@ export const App = () => {
     <div>
       <h1>Test QA!</h1>
       <h2> prueba Funcional!!</h2>
+      <h3>pruebas QA</h3>
       
     </div>
   )
