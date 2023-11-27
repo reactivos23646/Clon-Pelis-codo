@@ -57,6 +57,7 @@ Currently, two official plugins are available:
             import { register } from 'swiper/element/bundle';
             // register Swiper custom elements
             register();
+    21 INSTALAMOS SWR PARA HACER LAS PETICIONES: npm i swr
     
 
 
