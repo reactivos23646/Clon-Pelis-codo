@@ -3,6 +3,9 @@ import { useAuth } from '../../core/auth/hook/use_auth';
 import { AppSwiper } from '../../core/components/carrusel/app_swiper';
 import { getPopularMovies, getPlayingMovies,getUpcomingMovies } from './services/movie.services';
 import useSWR from 'swr';
+import AppButton from '../../core/components/button/app_button';
+import AppCarruselSection from '../../core/components/app_carrusel_section/app_carrusel_section';
+import AppCard from '../../core/components/app_card/app_card';
 
 
 const HomeView = ()=>{
@@ -33,79 +36,18 @@ const HomeView = ()=>{
 return  (
         <div>
             <h1>HOME VIEW</h1>
-            <button onClick={logout}>Cerrar Sesión</button> 
-            <p><br /></p>
+            <AppButton onClick={logout}>Cerrar Sesión</AppButton>
+            <p><br/></p>
 
-            <h2>Películas más Populares</h2>
-            <AppSwiper>
-            {
-                popularMovies?.map((e,index)=>(
-                    <swiper-slide key={index}>
-                    <div 
-                        style={{
-                            color:"red",
-                            height:"150px",
-                            width:"250px",
-                            backgroundImage: `url(${e.backdrop})`,
-                            backgroundSize: "contain",
-                            backgroundRepeat: "no-repeat",
-                            backgroundPosition: "center",
-                    }}>
-                        <h3>{e.title}</h3>
+            <AppCarruselSection title={"Películas más populares"} data={popularMovies}/>
+            <p><br/></p>
+            <AppCarruselSection title={"Novedades: agregadas recientemente"} data={upComingMovies}/>
+            <p><br/></p>
+            <AppCarruselSection title={"Continuar viendo"} data={playingMovies}/>
 
-                    </div>
-                    </swiper-slide>
-                ))
-            }
+            
 
-            </AppSwiper>
-
-            <h2>Novedades</h2>
-            <AppSwiper>
-            {
-                upComingMovies?.map((e,index)=>(
-                    <swiper-slide key={index}>
-                    <div 
-                        style={{
-                            color:"red",
-                            height:"150px",
-                            width:"250px",
-                            backgroundImage: `url(${e.backdrop})`,
-                            backgroundSize: "contain",
-                            backgroundRepeat: "no-repeat",
-                            backgroundPosition: "center",
-                    }}>
-                        <h3> {e.title} </h3>
-
-                    </div>
-                    </swiper-slide>
-                ))
-            }
-
-            </AppSwiper>
-            <h2>Continúa Viendo</h2>
-            <AppSwiper>
-            {
-                playingMovies?.map((e,index)=>(
-                    <swiper-slide key={index}>
-                    <div 
-                        style={{
-                            color:"red",
-                            height:"150px",
-                            width:"250px",
-                            backgroundImage: `url(${e.backdrop})`,
-                            backgroundSize: "contain",
-                            backgroundRepeat: "no-repeat",
-                            backgroundPosition: "center",
-                    }}>
-                        <h3>{e.title}</h3>
-
-                    </div>
-                    </swiper-slide>
-                ))
-            }
-
-            </AppSwiper>
+            
         </div>
 
         )
