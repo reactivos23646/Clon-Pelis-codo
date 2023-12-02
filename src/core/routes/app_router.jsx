@@ -3,14 +3,6 @@ import HomeView from "../../features/home/views/home_views";
 import PrivateRoute from "../../features/auth/components/private_route";
 import PublicRoute from "../../features/auth/components/public_route";
 import LoginView from "../../features/auth/views/login/views/login_view";
-import App_navMovie from "../app_navMovie/app_navMovie";
-import App_footerMovie from "../app_footerMovie/app_footerMovie";
-
-//import app_navMovie from "../components/app_navMovie/app_navMovie";
-//import app_footerMovie from "../components/app_footerMovie/app_footerMovie";
-
-
-
 
 export const appRouter = createBrowserRouter([
 

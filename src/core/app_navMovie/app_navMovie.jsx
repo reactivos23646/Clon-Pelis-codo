@@ -7,7 +7,7 @@ const App_navMovie = () => {
                 <nav className="navbar navbar-expand-lg navbar navbar-dark bg-dark" data-bs-theme="dark">
                     <div className="container-fluid">
                         <a className="navbar-brand" href="#">
-                            <img src="./src/images/logoNetflix.png" width="120" height="120" alt="logo"></img>
+                            <img src="/public/picture/logoNetflix.png" width="120" height="120" alt="logo"></img>
                         </a>
                         <div className="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
@@ -27,7 +27,7 @@ const App_navMovie = () => {
                                     <a className="nav-link" href="../navbar/pages/MiLista.jsx">Mi lista</a>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link" href="../navbar/pages/ExploraPorIdioma.jsx">Explora por idioma</a>
+                                    <a className="nav-link" href="../../picture/avatar_1.jpg">Explora por idioma</a>
                                 </li>
                             </ul>
 
@@ -54,7 +54,7 @@ const App_navMovie = () => {
                                 <ul className="navbar-nav">
                                     <li className="nav-item dropdown-center">
                                         <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                            <img src="./src/images/avatar_1.jpg" className="rounded float-start" width="40" height="40" alt="avatar"></img>
+                                            <img src="/public/picture/avatar_1.jpg" className="rounded float-start" width="40" height="40" alt="avatar"></img>
                                         </a>
                                         <ul className="dropdown-menu">
                                             <li><a className="dropdown-item" href="#">Usuario 1</a></li>
