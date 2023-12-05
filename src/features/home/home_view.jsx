@@ -30,7 +30,7 @@ const HomeView = ()=>{
 
     const { logout, isLoggedIn } = useAuth();
 
-    console.log("estado ", isLoggedIn);
+    console.log("estado: ", isLoggedIn);
     console.log(upComingMovies);
 
 return  (
