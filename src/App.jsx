@@ -1,6 +1,7 @@
 import { Datepicker, Input, initTE } from "tw-elements";
 import React, { useEffect } from "react";
 import YourComponent from './components/Modal';
+import AppModal from "./core/components/app_modal/app_modal";
 
 export const App = () => {
   useEffect(() => {
@@ -8,7 +9,7 @@ export const App = () => {
   }, []);
   return (
     <>
-    <YourComponent/>
+    <AppModal/>
     </>
   )
 }
