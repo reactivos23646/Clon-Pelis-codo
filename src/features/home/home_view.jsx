@@ -8,7 +8,8 @@ import AppCarruselSection from '../../core/components/app_carrusel_section/app_c
 import AppCard from '../../core/components/app_card/app_card';
 import AppModal from '../../core/components/app_modal/app_modal';
 import modalPopulares from '../../core/components/modales/components/modal_populares';
-
+import { useModal } from '../../core/components/app_modal/hook/use_modal';
+import Body from '../../core/components/app_card/components/body';
 
 
 const HomeView = ()=>{
@@ -50,19 +51,22 @@ return  (
             <p><br/></p>
             <AppCarruselSection title={"Novedades: agregadas recientemente"} data={upComingMovies}/>
             <p><br/></p>
-            <AppCarruselSection title={"Continuar viendo"} data={playingMovies}/>
+            <AppCarruselSection title={"Continuar viendo"} data={playingMovies}/>     
 
             <button Onclick ={openModal}>Abrir</button>
 
-            <AppModal open={isOpen} onClickedOut={closeModal}>
-              <div>
-                <modalPopulares/>
-              </div>
+<AppModal open={isOpen} onClickedOut={closeModal}>
+  <div>
+    <modalPopulares />
+  </div>
 
-            </AppModal>
+</AppModal>
+
+
+</div>
+
+
             
-            
-        </div>
 
         )
 
